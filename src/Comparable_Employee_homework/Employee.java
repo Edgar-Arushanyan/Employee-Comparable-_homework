@@ -2,10 +2,10 @@ package Comparable_Employee_homework;
 
 public class Employee implements Comparable<Employee>{
 
-    int id;
-    String name;
-    int  age;
-    int salary;
+    private   int id;
+    private   String name;
+    private   int  age;
+    private   int salary;
 
     public Employee(int id, String name, int age, int salary) {
         this.id = id;
