@@ -1,6 +1,8 @@
 package Comparable_Employee_homework;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     /*
@@ -49,6 +51,22 @@ public class Main {
         for (Employee e : employees) {
             System.out.println(e);
         }
+
+        //---------------------------------------// LIst \\ ----------------------------------------------------\\
+
+        List<Employee> employees1 =Arrays.asList();
+
+         new Employee(11, "Nick", 40,2800);
+         new Employee(25, "john", 37,1500);
+         new Employee(14, "Paul", 40,3900);
+
+        Collections.sort(employees1);
+        System.out.println("by id");
+        System.out.println(employees1);
+
+        System.out.println("by salary");
+        Collections.sort(employees1,new SalaryComparator());
+        System.out.println(employees1);
 
     }
     /*
